@@ -14,7 +14,7 @@ public class PositionPointLine {
         int c = in.nextInt();
         int p1 = a * x1 + b * y1 + c;
         int p2 = a * x2 + b * y2 + c;
-        System.out.println((p1 == p2 ? "YES" : "NO"));
+        System.out.println((p1 > 0 && p2 > 0) || (p1 < 0 && p2 < 0) ? "YES" : "NO");
     }
 }
 
